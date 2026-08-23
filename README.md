@@ -17,6 +17,7 @@
 - 📉 **Dataset:** Transacciones de tarjetahabientes europeos (284,807 operaciones, 492 fraudes = $0.173\%$).
 - 🧠 **Enfoque:** Evaluación rigurosa mediante 11 conceptos probabilísticos e inferencia bayesiana.
 - 🚀 **Resultado:** Identificación de componentes latentes altamente informativas ($V_{17}, V_{12}, V_{16}$) y optimización del Valor Predictivo Positivo (Posterior).
+- **Data obtenida de:** https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 
 ---
 
@@ -66,8 +67,6 @@ Incluso con pruebas diagnósticas altamente específicas ($99\%$), el **prior ex
 ### 📂 Estructura del Repositorio
 
 ```bash
-├── data/
-│   └── creditcard.csv          # Dataset original ULB (Kaggle)
 ├── notebooks/
 │   └── ML_Unsupervised_Fraud.ipynb # Notebook con desarrollo de los 11 conceptos
 ├── README.md                   # Documentación del proyecto
