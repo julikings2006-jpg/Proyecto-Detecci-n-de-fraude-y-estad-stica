@@ -38,15 +38,15 @@
 | Concepto Probabilístico | Aplicación Cuantitativa en el Proyecto |
 | :--- | :--- |
 | **Probabilidad Condicional** | $P(\text{Fraude} \mid \text{Amount} > X)$ cae en tramos altos ($0.132\%$ en $>\$10$ a $0\%$ en $>\$10,000$). |
-| **Teorema de Bayes** | Una regla sobre $V_{14} < -6$ eleva la probabilidad posterior a $70.30\%$ (multiplica la sospecha $407\times$)[cite: 2]. |
-| **Verosimilitud (MLE)** | Ajuste Gaussiano en $V_{14}$ muestra desplazamiento significativo ($\mu_{\text{legítima}}=0.012$ vs $\mu_{\text{fraude}}=-6.972$)[cite: 2]. |
-| **Distribuciones Paramétricas** | Se rechaza normalidad en $V_{17}, V_{12}, V_{16}$ ($p \approx 0$); evidencia de colas pesadas en Q-Q Plots[cite: 2]. |
-| **Esperanza y Varianza** | Mediana en fraude ($\$9.25$) es menor que en legítimas ($\$22.00$), pero el promedio es mayor ($\$122.21$) por asimetría[cite: 2]. |
-| **Independencia y Correlación**| Ortogonalidad perfecta en componentes PCA ($r=0.0000$); `Amount` ($r=0.0056$) no predice fraude[cite: 2]. |
-| **Prior y Posterior** | Un clasificador con $99\%$ sensibilidad/especificidad produce solo $14.6\%$ posterior bajo el prior real de $0.173\%$[cite: 2]. |
-| **Entropía** | Entropía de clase $H(\text{Class}) = 0.018$ bits; la baja entropía global oculta la extrema dificultad del problema[cite: 2]. |
-| **Entropía Cruzada** | Modelo balanceado logra Log Loss de $0.093$ (train) y $0.096$ (test), demostrando alta capacidad de generalización[cite: 2]. |
-| **Divergencia KL** | Jerarquización de variables más informativas: $V_{17}$ ($KL=6.91$), $V_{12}$ ($6.76$), $V_{16}$ ($6.27$), $V_{14}$ ($6.02$)[cite: 2]. |
+| **Teorema de Bayes** | Una regla sobre $V_{14} < -6$ eleva la probabilidad posterior a $70.30\%$ (multiplica la sospecha $407\times$). |
+| **Verosimilitud (MLE)** | Ajuste Gaussiano en $V_{14}$ muestra desplazamiento significativo ($\mu_{\text{legítima}}=0.012$ vs $\mu_{\text{fraude}}=-6.972$). |
+| **Distribuciones Paramétricas** | Se rechaza normalidad en $V_{17}, V_{12}, V_{16}$ ($p \approx 0$); evidencia de colas pesadas en Q-Q Plots. |
+| **Esperanza y Varianza** | Mediana en fraude ($\$9.25$) es menor que en legítimas ($\$22.00$), pero el promedio es mayor ($\$122.21$) por asimetría. |
+| **Independencia y Correlación**| Ortogonalidad perfecta en componentes PCA ($r=0.0000$); `Amount` ($r=0.0056$) no predice fraude. |
+| **Prior y Posterior** | Un clasificador con $99\%$ sensibilidad/especificidad produce solo $14.6\%$ posterior bajo el prior real de $0.173\%$. |
+| **Entropía** | Entropía de clase $H(\text{Class}) = 0.018$ bits; la baja entropía global oculta la extrema dificultad del problema. |
+| **Entropía Cruzada** | Modelo balanceado logra Log Loss de $0.093$ (train) y $0.096$ (test), demostrando alta capacidad de generalización. |
+| **Divergencia KL** | Jerarquización de variables más informativas: $V_{17}$ ($KL=6.91$), $V_{12}$ ($6.76$), $V_{16}$ ($6.27$), $V_{14}$ ($6.02$). |
 
 ---
 
@@ -54,12 +54,12 @@
 
 <div><img align="right" alt="GIF" src="https://github.com/Aurorp1g/Aurorp1g/raw/main/Right_Side.gif" width="280" height="auto" /></div>
 
-Un clasificador trivial que clasifique **TODAS** las transacciones como legítimas obtendría una **precisión/exactitud del 99.827%**, pero sería completamente inútil para el negocio al no detectar ningún fraude[cite: 2].
+Un clasificador trivial que clasifique **TODAS** las transacciones como legítimas obtendría una **precisión/exactitud del 99.827%**, pero sería completamente inútil para el negocio al no detectar ningún fraude.
 
 Al calcular el **Teorema de Bayes**:
 $$\text{Posterior} = \frac{P(\text{Test}^+ \mid \text{Fraude}) \cdot P(\text{Fraude})}{P(\text{Test}^+)}$$
 
-Incluso con pruebas diagnósticas altamente específicas ($99\%$), el **prior extremo del 0.173%** genera aproximadamente 6 falsas alarmas por cada fraude real detectado ($14.6\%$ de Valor Predictivo Positivo)[cite: 2].
+Incluso con pruebas diagnósticas altamente específicas ($99\%$), el **prior extremo del 0.173%** genera aproximadamente 6 falsas alarmas por cada fraude real detectado ($14.6\%$ de Valor Predictivo Positivo).
 
 ---
 
