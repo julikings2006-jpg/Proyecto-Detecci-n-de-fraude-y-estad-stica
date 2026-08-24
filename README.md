@@ -70,3 +70,5 @@ Incluso con pruebas diagnósticas altamente específicas ($99\%$), el **prior ex
 ├── notebooks/
 │   └── ML_Unsupervised_Fraud.ipynb # Notebook con desarrollo de los 11 conceptos
 ├── README.md                   # Documentación del proyecto
+├── Reporte
+│   └── Informe_proyecto_corte_1_reyes.docx # Informe ejecutivo del proyecto
